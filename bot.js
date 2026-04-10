@@ -149,7 +149,7 @@ const startWorker = async (workerId, limit) => {
         const { default: pLimit } = await import('p-limit');
         
         const MAX_WORKERS = 5; 
-        const TOTAL_AKUN = 10; 
+        const TOTAL_AKUN = 100; 
         const limit = pLimit(MAX_WORKERS);
 
         const tasks = [];
